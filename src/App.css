@@ -19,19 +19,37 @@
   right: 180px;
   border: 1px dashed #d0d5dd;
   padding: 10px;
+  border-radius: 50%;
+}
+#twitter{
+ font: 'Inter' 700 normal 20px; 
+ color: #101828;
+
 }
 #slack{
   display: none;
 }
-
-.links__btn {
-  background-color: #ff0000;
+.links{
   display: flex;
   flex-direction: column;
-  padding: 1.4em;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+  padding: 0 20px;
+}
+
+.links__btn {
+  background-color: #EAECF0;
+  padding: 24px 32px;
   margin: 1em 0;
   border-radius: 1rem;
   font-size: 18px;
-  color: #fff;
+  text-decoration: none;
   transition: all 0.3s;
+  color: #101828;
+}
+.links__btn:hover{
+  background-color: #d0d5dd;
+}
+.social-section>img{
+  margin: 5px;
 }

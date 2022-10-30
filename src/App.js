@@ -2,6 +2,8 @@
 import "./App.css";
 import share from "./assets/img/share.png";
 import avatar from "./assets/img/profile__img.png";
+import slack from "./assets/img/slack.png";
+import github from "./assets/img/github.png";
 
 function App() {
   return (
@@ -28,6 +30,9 @@ function App() {
       </div>
 
       <div className="links">
+        <a className="links__btn" href="https://twitter.com/u_d_e_m_x">
+          Twitter Link
+        </a>
         <a
           className="links__btn"
           href="https://training.zuri.team/"
@@ -36,29 +41,34 @@ function App() {
           Zuri Teams
         </a>
         <a href="http://books.zuri.team" className="links__btn" id="books">
-          Purchase Designs & Coding Books
+          Zuri Books
         </a>
         <a
           href="https://books.zuri.team/python-for-beginners?ref_id=udeme_udoh"
           className="links__btn"
           id="book__python"
         >
-          Purchase Python For Beginners
+          Python Books
         </a>
         <a
           href="https://background.zuri.team"
           className="links__btn"
           id="pitch"
+          title="Hire Me For Background Code Checks"
         >
-          Hire Me For Background Code Checks
+          Background Checks for Coders
         </a>
         <a
           href="https://books.zuri.team/design-rules"
           className="links__btn"
           id="book__design"
         >
-          Get Free Design Rules (Guide Book) By Zuri Teams
+          Design Books
         </a>
+      </div>
+      <div className="social-section">
+        <img src={slack} alt="" />
+        <img src={github} alt="" />
       </div>
     </div>
   );
