@@ -126,7 +126,7 @@
 
   .links {
     display: flex;
-    padding: 0;
+    padding-left: 10px;
   }
 
   .social-section>img {
