@@ -1,19 +1,23 @@
 .App {
   text-align: center;
-  padding: 20px;
+  padding: 40px;
+  font: 'Inter' normal;
 }
-#profile__img{
+
+#profile__img {
   width: 88px;
   height: 88px;
   border-radius: 50%;
 }
-.profile-section{
+
+.profile-section {
   position: relative;
   width: 100%;
   padding-top: 30px;
   margin-bottom: 56px;
 }
-.share{
+
+.share {
   position: absolute;
   top: 20px;
   right: 180px;
@@ -21,15 +25,22 @@
   padding: 10px;
   border-radius: 50%;
 }
-#twitter{
- font: 'Inter' 700 normal 20px; 
- color: #101828;
 
-}
-#slack{
+.more {
   display: none;
 }
-.links{
+
+#twitter {
+  font: 'Inter' 700 normal 20px;
+  color: #101828;
+
+}
+
+#slack {
+  display: none;
+}
+
+.links {
   display: flex;
   flex-direction: column;
   /* padding-left: 20px; */
@@ -40,17 +51,105 @@
 .links__btn {
   background-color: #EAECF0;
   padding: 24px 32px;
-  margin: 1em 0;
+  margin: 8px 0;
   border-radius: 1rem;
   font-size: 18px;
   text-decoration: none;
   transition: all 0.3s;
   color: #101828;
 }
-.links__btn:hover{
+
+.links__btn:hover {
   background-color: #d0d5dd;
 }
-.social-section>img{
+
+.social-section>img {
   margin: 5px;
   height: 24px;
+  margin-top: 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-section>div {
+  flex: 1;
+  margin-top: 112px;
+}
+
+.footer-section>div:first-child {
+  text-align: left;
+}
+
+.footer-section>div:last-child {
+  text-align: right;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+
+
+@media (max-width: 375px) {
+  .App {
+    padding: 20px;
+  }
+
+  .share {
+    display: none;
+  }
+
+  .more {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+  }
+
+  #twitter {
+    font: 'Inter' normal 700;
+    font-size: 18px;
+  }
+
+  #links__btn {
+    width: 343px;
+    height: 68px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .links {
+    display: flex;
+    padding: 0;
+  }
+
+  .social-section>img {
+    margin-top: 48px;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    margin-top: 64px;
+    border-top: #d0d5dd 1px solid;
+    padding: 32px 0;
+    text-align: left;
+  }
+
+  .footer-section>div,
+  p {
+    margin: 0;
+    padding: 0;
+    color: #667085;
+  }
+
+  .footer-section>div:last-child {
+    text-align: left;
+  }
+
 }

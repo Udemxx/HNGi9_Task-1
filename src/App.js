@@ -1,30 +1,23 @@
-// import logo from './logo.svg';
 import "./App.css";
 import share from "./assets/img/share.png";
 import avatar from "./assets/img/profile__img.png";
 import slack from "./assets/img/slack.png";
 import github from "./assets/img/github.png";
+import Zuri from "./assets/img/Zuri.Internship_Logo.png";
+import I4G from "./assets/img/I4G.png";
+import more from "./assets/img/three-dots.png";
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Testing React
-        </a>
-      </header> */}
       <div className="profile-section">
+        <a href="#">
+          <img src={share} className="share" alt="" />
+        </a>
+        <a href="#">
+          <img src={more} alt="" className="more" />
+        </a>
         <img src={avatar} id="profile__image" alt="" />
-        <img src={share} className="share" alt="" />
         <h2 id="twitter">Udeme Udoh</h2>
         <h2 id="slack">Udemxx</h2>
       </div>
@@ -69,6 +62,17 @@ function App() {
       <div className="social-section">
         <img src={slack} alt="" />
         <img src={github} alt="" />
+      </div>
+      <div className="footer-section">
+        <div>
+          <img src={Zuri} alt="" />
+        </div>
+        <div>
+          <p className="footer-text">HNG Internship 9 Frontend Task</p>
+        </div>
+        <div>
+          <img src={I4G} alt="" />
+        </div>
       </div>
     </div>
   );
